@@ -43,11 +43,11 @@
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: fill 250ms var(--cubic);
+    transition: fill 250ms $cubic;
 
     &:hover,
     &:focus {
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
 }
@@ -59,7 +59,7 @@
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
-  color: var(--text-color);
+  color: $text-color;
 
   &__text {
     margin-bottom: 30px;
@@ -68,7 +68,7 @@
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-color);
+    color: $title-color;
   }
 
   &__label {
@@ -85,7 +85,7 @@
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border 250ms var(--cubic);
+    transition: border 250ms $cubic;
   }
 
   &__textarea {
@@ -97,13 +97,13 @@
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border 250ms var(--cubic);
+    transition: border 250ms $cubic;
   }
 
   &__input:focus,
   &__textarea:focus {
     outline: none;
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
   }
 
   &__checkbox {
@@ -114,13 +114,13 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--text-color);
+    color: $text-color;
   }
 
   &__checkbox-link {
     text-decoration: underline;
     margin-left: 5px;
-    color: var(--accent-color);
+    color: $accent-color;
   }
 
   &__input-icon {
@@ -129,10 +129,10 @@
     top: 30px;
     width: 18px;
     height: 18px;
-    transition: fill 250ms var(--cubic);
+    transition: fill 250ms $cubic;
 
     .form__input:focus + & {
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
 }
@@ -144,16 +144,16 @@
   width: 16px;
   height: 16px;
   border-radius: 2px;
-  border: 2px solid var(--title-color);
+  border: 2px solid $title-color;
   background-color: #fff;
   background-image: url("../images/svg/modal-check.svg");
   background-repeat: no-repeat;
   background-size: 12px 8px;
   background-position: center;
-  transition: border 250ms var(--cubic), background-color 250ms var(--cubic);
+  transition: border 250ms $cubic, background-color 250ms $cubic;
 
   .form__checkbox-input:checked + & {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border: none;
   }
 }

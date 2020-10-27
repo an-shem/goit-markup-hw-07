@@ -9,9 +9,9 @@
 /* Общие сбросы */
 
 body {
-  font-family: var(--maim-font);
+  font-family: $maim-font;
   font-style: normal;
-  color: var(--title-color);
+  color: $title-color;
 }
 
 ul {

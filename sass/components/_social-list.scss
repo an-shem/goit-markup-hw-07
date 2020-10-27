@@ -16,22 +16,22 @@
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    transition: background-color 250ms var(--cubic);
+    transition: background-color 250ms $cubic;
   }
 
   &__svg {
     width: 20px;
     height: 20px;
     fill: #afb1b8;
-    transition: fill 250ms var(--cubic);
+    transition: fill 250ms $cubic;
   }
 }
 
 .social-list__link:hover,
 .social-list__link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 
   & .social-list__svg {
-    fill: var(--hero-title-color);
+    fill: $hero-title-color;
   }
 }
