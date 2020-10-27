@@ -1,0 +1,33 @@
+/* СПИСОК СОЦИАЛЬНЫХ ССЫЛОК */
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 250ms var(--cubic);
+}
+.social-list__link:hover,
+.social-list__link:focus {
+  background-color: var(--accent-color);
+}
+.social-list__svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: fill 250ms var(--cubic);
+}
+.social-list__link:hover .social-list__svg,
+.social-list__link:focus .social-list__svg {
+  fill: var(--hero-title-color);
+}
